@@ -2,19 +2,19 @@
 
 ajax调用示例：
 
-```
+```html
 
-		<!----调用时区列表----------->
-		<input class="form-control" list="time_zone_list" type="text" name="time_zone" required="" id="time_zone" style="width:196px">
-		<!-----------时区列表---------------------------->
-		<datalist id="time_zone_list">
-		</datalist>
+<!----调用时区列表----------->
+<input class="form-control" list="time_zone_list" type="text" name="time_zone" required="" id="time_zone" style="width:196px">
+<!-----------时区列表---------------------------->
+<datalist id="time_zone_list">
+</datalist>
     
     
     
   <script>
     
-	time_zone_list_url= '../global/time_zone_list.html';
+  time_zone_list_url= '../global/time_zone_list.html';
   
   function get_data_list(url,list_id) {
     //1.创建ajax对象

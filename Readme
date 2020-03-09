@@ -3,7 +3,6 @@
 ajax调用示例：
 
 ```html
-
 <!----调用时区列表----------->
 <input class="form-control" list="time_zone_list" type="text" name="time_zone" required="" id="time_zone" style="width:196px">
 <!-----------时区列表---------------------------->
@@ -12,11 +11,11 @@ ajax调用示例：
     
     
     
-  <script>
+<script>
     
-  time_zone_list_url= '../global/time_zone_list.html';
+time_zone_list_url= './time_zone_list.html';
   
-  function get_data_list(url,list_id) {
+function get_data_list(url,list_id) {
     //1.创建ajax对象
     var oAjax = null
     //此处必须需要使用window.的方式,表示为window对象的一个属性.不存在是值为undefined,进入else/若直接使用XMLHttpRequest在不支持的情况下会报错
